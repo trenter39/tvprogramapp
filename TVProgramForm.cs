@@ -53,17 +53,17 @@ namespace TVProgramApp
             string name = programNameTextBox.Text;
             if (string.IsNullOrWhiteSpace(time) || string.IsNullOrWhiteSpace(name))
             {
-                MessageBox.Show("Заповніть всі поля!", "Помилка");
+                MessageBox.Show("Please fill in all fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else if (!IsValidTimeFormat(time))
             {
-                MessageBox.Show("Неправильний формат часу (HH:mm)!", "Помилка");
+                MessageBox.Show("Invalid time format (HH:mm)!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (!_schedule.IsTimeUnique(_dayOfWeek, time))
             {
-                MessageBox.Show("Цей час вже використовується!", "Помилка");
+                MessageBox.Show("This time is already used!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -75,26 +75,26 @@ namespace TVProgramApp
         {
             if (dataGridTVShow.SelectedRows.Count != 1)
             {
-                MessageBox.Show("Виберіть рядок для редагування!", "Помилка");
+                MessageBox.Show("Select a row to edit!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             string newTime = programTimeTextBox.Text;
             string newName = programNameTextBox.Text;
             if (string.IsNullOrWhiteSpace(newTime) || string.IsNullOrWhiteSpace(newName))
             {
-                MessageBox.Show("Заповніть всі поля!", "Помилка");
+                MessageBox.Show("Please fill in all fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (!IsValidTimeFormat(newTime))
             {
-                MessageBox.Show("Неправильний формат часу (HH:mm)", "Помилка");
+                MessageBox.Show("Invalid time format (HH:mm)!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             var row = dataGridTVShow.SelectedRows[0];
             string oldTime = row.Cells[0].Value.ToString();
             if (!_schedule.IsTimeUnique(_dayOfWeek, newTime) && newTime != oldTime)
             {
-                MessageBox.Show("Цей час вже використовується!", "Помилка");
+                MessageBox.Show("This time is already used!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             _schedule.RemoveProgram(_dayOfWeek, oldTime);
@@ -105,7 +105,7 @@ namespace TVProgramApp
         {
             if (dataGridTVShow.SelectedRows.Count != 1)
             {
-                MessageBox.Show("Виберіть рядок для видалення!", "Помилка");
+                MessageBox.Show("Select a row to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             string time = dataGridTVShow.SelectedRows[0].Cells[0].Value.ToString();
@@ -123,7 +123,7 @@ namespace TVProgramApp
 
             if (!IsValidTimeFormat(timeSearch))
             {
-                MessageBox.Show("Неправильний формат часу (HH:mm)", "Помилка");
+                MessageBox.Show("Invalid time format (HH:mm)!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -132,7 +132,7 @@ namespace TVProgramApp
             if (results.Count == 0)
             {
                 RefreshGrid();
-                MessageBox.Show("Програму не знайдено!", "Пошук");
+                MessageBox.Show("Program not found!", "Search", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -146,7 +146,7 @@ namespace TVProgramApp
             if (results.Count == 0)
             {
                 RefreshGrid();
-                MessageBox.Show("Програму не знайдено!", "Пошук");
+                MessageBox.Show("Program not found!", "Search", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
