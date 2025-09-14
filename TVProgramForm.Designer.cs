@@ -65,7 +65,7 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             dataGridTVShow.DefaultCellStyle = dataGridViewCellStyle2;
-            dataGridTVShow.Location = new Point(100, 149);
+            dataGridTVShow.Location = new Point(121, 165);
             dataGridTVShow.MultiSelect = false;
             dataGridTVShow.Name = "dataGridTVShow";
             dataGridTVShow.ReadOnly = true;
@@ -88,7 +88,7 @@
             AddButton.FlatAppearance.BorderColor = Color.Black;
             AddButton.FlatStyle = FlatStyle.Flat;
             AddButton.Font = new Font("Segoe UI", 18F);
-            AddButton.Location = new Point(285, 668);
+            AddButton.Location = new Point(306, 684);
             AddButton.Name = "AddButton";
             AddButton.Size = new Size(240, 41);
             AddButton.TabIndex = 1;
@@ -102,7 +102,7 @@
             ClearButton.FlatAppearance.BorderColor = Color.Black;
             ClearButton.FlatStyle = FlatStyle.Flat;
             ClearButton.Font = new Font("Segoe UI", 18F);
-            ClearButton.Location = new Point(530, 723);
+            ClearButton.Location = new Point(551, 739);
             ClearButton.Name = "ClearButton";
             ClearButton.Size = new Size(240, 41);
             ClearButton.TabIndex = 2;
@@ -116,7 +116,7 @@
             EditButton.FlatAppearance.BorderColor = Color.Black;
             EditButton.FlatStyle = FlatStyle.Flat;
             EditButton.Font = new Font("Segoe UI", 18F);
-            EditButton.Location = new Point(530, 668);
+            EditButton.Location = new Point(551, 684);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(240, 41);
             EditButton.TabIndex = 3;
@@ -130,7 +130,7 @@
             DeleteButton.FlatAppearance.BorderColor = Color.Black;
             DeleteButton.FlatStyle = FlatStyle.Flat;
             DeleteButton.Font = new Font("Segoe UI", 18F);
-            DeleteButton.Location = new Point(775, 668);
+            DeleteButton.Location = new Point(796, 684);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(240, 41);
             DeleteButton.TabIndex = 4;
@@ -143,7 +143,7 @@
             programNameTextBox.BackColor = Color.White;
             programNameTextBox.BorderStyle = BorderStyle.FixedSingle;
             programNameTextBox.Font = new Font("Segoe UI", 22.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            programNameTextBox.Location = new Point(104, 724);
+            programNameTextBox.Location = new Point(125, 740);
             programNameTextBox.Margin = new Padding(5);
             programNameTextBox.Name = "programNameTextBox";
             programNameTextBox.PlaceholderText = "Program Name";
@@ -155,7 +155,7 @@
             programTimeTextBox.BackColor = Color.White;
             programTimeTextBox.BorderStyle = BorderStyle.FixedSingle;
             programTimeTextBox.Font = new Font("Segoe UI", 22.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            programTimeTextBox.Location = new Point(104, 668);
+            programTimeTextBox.Location = new Point(125, 684);
             programTimeTextBox.Name = "programTimeTextBox";
             programTimeTextBox.PlaceholderText = "12:00";
             programTimeTextBox.Size = new Size(175, 47);
@@ -165,7 +165,7 @@
             // 
             TVProgramLabel.AutoSize = true;
             TVProgramLabel.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            TVProgramLabel.Location = new Point(562, 20);
+            TVProgramLabel.Location = new Point(583, 36);
             TVProgramLabel.Name = "TVProgramLabel";
             TVProgramLabel.Size = new Size(172, 37);
             TVProgramLabel.TabIndex = 11;
@@ -177,7 +177,7 @@
             TimeSearchButton.FlatAppearance.BorderColor = Color.Black;
             TimeSearchButton.FlatStyle = FlatStyle.Flat;
             TimeSearchButton.Font = new Font("Segoe UI", 18F);
-            TimeSearchButton.Location = new Point(1020, 668);
+            TimeSearchButton.Location = new Point(1041, 684);
             TimeSearchButton.Name = "TimeSearchButton";
             TimeSearchButton.Size = new Size(240, 41);
             TimeSearchButton.TabIndex = 14;
@@ -191,7 +191,7 @@
             NameSearchButton.FlatAppearance.BorderColor = Color.Black;
             NameSearchButton.FlatStyle = FlatStyle.Flat;
             NameSearchButton.Font = new Font("Segoe UI", 18F);
-            NameSearchButton.Location = new Point(1020, 723);
+            NameSearchButton.Location = new Point(1041, 739);
             NameSearchButton.Name = "NameSearchButton";
             NameSearchButton.Size = new Size(240, 41);
             NameSearchButton.TabIndex = 15;
@@ -205,7 +205,7 @@
             ResetButton.FlatAppearance.BorderColor = Color.Black;
             ResetButton.FlatStyle = FlatStyle.Flat;
             ResetButton.Font = new Font("Segoe UI", 18F);
-            ResetButton.Location = new Point(775, 723);
+            ResetButton.Location = new Point(796, 739);
             ResetButton.Name = "ResetButton";
             ResetButton.Size = new Size(240, 41);
             ResetButton.TabIndex = 17;
@@ -216,7 +216,7 @@
             // MondayButton
             // 
             MondayButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            MondayButton.Location = new Point(100, 72);
+            MondayButton.Location = new Point(121, 88);
             MondayButton.Name = "MondayButton";
             MondayButton.Size = new Size(160, 60);
             MondayButton.TabIndex = 18;
@@ -228,7 +228,7 @@
             // TuesdayButton
             // 
             TuesdayButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            TuesdayButton.Location = new Point(266, 72);
+            TuesdayButton.Location = new Point(287, 88);
             TuesdayButton.Name = "TuesdayButton";
             TuesdayButton.Size = new Size(160, 60);
             TuesdayButton.TabIndex = 19;
@@ -240,7 +240,7 @@
             // WednesdayButton
             // 
             WednesdayButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            WednesdayButton.Location = new Point(432, 72);
+            WednesdayButton.Location = new Point(453, 88);
             WednesdayButton.Name = "WednesdayButton";
             WednesdayButton.Size = new Size(160, 60);
             WednesdayButton.TabIndex = 20;
@@ -252,7 +252,7 @@
             // ThursdayButton
             // 
             ThursdayButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            ThursdayButton.Location = new Point(598, 72);
+            ThursdayButton.Location = new Point(619, 88);
             ThursdayButton.Name = "ThursdayButton";
             ThursdayButton.Size = new Size(160, 60);
             ThursdayButton.TabIndex = 21;
@@ -264,7 +264,7 @@
             // FridayButton
             // 
             FridayButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            FridayButton.Location = new Point(764, 72);
+            FridayButton.Location = new Point(785, 88);
             FridayButton.Name = "FridayButton";
             FridayButton.Size = new Size(160, 60);
             FridayButton.TabIndex = 22;
@@ -276,7 +276,7 @@
             // SaturdayButton
             // 
             SaturdayButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            SaturdayButton.Location = new Point(930, 72);
+            SaturdayButton.Location = new Point(951, 88);
             SaturdayButton.Name = "SaturdayButton";
             SaturdayButton.Size = new Size(160, 60);
             SaturdayButton.TabIndex = 23;
@@ -288,7 +288,7 @@
             // SundayButton
             // 
             SundayButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            SundayButton.Location = new Point(1096, 72);
+            SundayButton.Location = new Point(1117, 88);
             SundayButton.Name = "SundayButton";
             SundayButton.Size = new Size(160, 60);
             SundayButton.TabIndex = 24;
